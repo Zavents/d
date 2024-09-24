@@ -209,11 +209,179 @@
 
   </div>
 </div>
-
-
-
 </div>
+
+
+
+
+
+<div class="music-player">
+  <div class="music-control">
+      <a id="music-backward" onclick="prevTrack()">
+          <i class="player-icons">&#xe802;</i>
+      </a>
+
+      <a id="music-play" onclick="playpauseTrack()">
+          <i class="player-icons">&#xe800;</i>
+      </a>
+
+      <a id="music-forward" onclick="nextTrack()">
+          <i class="player-icons">&#xe801;</i>
+      </a>
+  </div>
+
+  <a id="split">|</a>
+
+  <div class="music-info" style="flex: 5;">
+      <a id="music-queue">1/1</a>
+      <a id="split">|</a>
+      <a id="music-duration">0:00 / 0:00</a>
+      <a id="split">|</a>
+      <a id="music-title" style="flex: 5;">MUSIC-TITLE</a>
+  </div>
+
+  <a id="split">|</a>
+
+  <div class="music-volume" style="flex: 0.5; padding-left: 5px;padding-right: 32px;">
+      <input type="range" id="music-volume" min="0" max="100" value="25" onchange="setVolume()" oninput="setVolume()">
+  </div>
+
+  <audio id="music" src="" crossorigin="anonymous"></audio>
+</div>
+
+
+<style>
+  /* bottombar player stuff, awful styling. */
+
+@font-face {
+  font-family: "jk::player-icons";
+  src: url("./public/assets2/font/icons.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.player-icons {
+  font-family: "jk::player-icons";
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  user-select: none;
+}
+
+.music-player {
+  bottom: 0;
+  left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+  height: 32px;
+  background-color: #79515100;
+  border-top: 1px solid #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  overflow: hidden;
+}
+
+.music-player a {
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 10px;
+}
+
+.music-info {
+  display: flex;
+  align-items: center;
+}
+
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: #fff;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #fff;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 0px;
+  background: #fff;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #fff;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000;
+  background: #fff;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0px solid #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 0px;
+  background: #fff;
+}
+
+/* phone */
+@media only screen and (max-width: 768px),
+(orientation: portrait) {
+  input[type=range] {
+      display: none;
+  }
+
+  #split {
+      display: none;
+  }
+
+  #music-queue {
+      display: none;
+  }
+
+  #music-duration {
+      display: none;
+  }
+
+  .music-control a {
+      font-size: 1.5em;
+      padding: 5px;
+  }
+
+  .music-info a {
+      font-size: 3vw;
+  }
+}
+</style>
 <script>
+
   function openModal(imgElement) {
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
@@ -265,5 +433,9 @@ function closeModal() {
 }
 
 </script>
+<script src="./public/js/music.js"></script>
+<script src="./public/js/music.js" type="ce6561c2530258e0b7a4d524-text/javascript"></script>
+<script src="./public/js/tailwind.js" type="text/javascript"></script>
+<script src="./public/js/script.js" type="text/javascript"></script>
 </body>
 </html>
