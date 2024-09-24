@@ -82,256 +82,227 @@
           <div>
             <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="./public/assets2/banner2.svg" alt="card-image" />
+                <!-- Add 'onclick' event to the image -->
+                <img src="./public/assets2/screenshot1.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
               </div>
               <div class="p-4">
                 <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
+                  My First Ever Website!
                 </h6>
                 <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
+                  im proudly flexing this website that i made when i newly on html and css
                 </p>
               </div>
               <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
+                <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Visit Site
+                  </button>
+                </a>
+                 <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Check on Github
+                  </button>
+                </a>
               </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0"> git add 
+              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
                 1
               </div>
-
-            </div>  
+            </div>
+          </div>
+        </div>
+        
+        <!-- Modal for Fullscreen Image -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
+          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
+            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
+            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
           </div>
         </div>
         
         
-
         <div class="grid gap-10">
           <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500  hover:shadow-pink-700 rounded-lg w-70 transition-shadow duration-300  ">
+            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 ">
               <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="card-image" />
+                <!-- Add 'onclick' event to the image -->
+                <img src="./public/assets2/screenshot2.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
               </div>
               <div class="p-4">
                 <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
+                  My First Ever Website!
                 </h6>
                 <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
+                  im proudly flexing this website that i made when i newly on html and css
                 </p>
               </div>
               <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
+                <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Visit Site
+                  </button>
+                </a>
+                 <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Check on Github
+                  </button>
+                </a>
               </div>
               <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
                 1
               </div>
-            </div>  
+            </div>
           </div>
         </div>
-
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500  hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105  ">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="card-image" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500  hover:shadow-pink-700 rounded-lg w-70 transition-shadow duration-300  ">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="card-image" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>  
+        
+        <!-- Modal for Fullscreen Image -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
+          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
+            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
+            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
           </div>
         </div>
         
         <div class="grid gap-10">
           <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500  hover:shadow-pink-700 rounded-lg w-70 transition-shadow duration-300  ">
+            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105">
               <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="card-image" />
+                <!-- Add 'onclick' event to the image -->
+                <img src="./public/assets2/screenshot1.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
               </div>
               <div class="p-4">
                 <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
+                  My First Ever Website!
                 </h6>
                 <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
+                  im proudly flexing this website that i made when i newly on html and css
                 </p>
               </div>
               <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
+                <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Visit Site
+                  </button>
+                </a>
+                 <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Check on Github
+                  </button>
+                </a>
               </div>
               <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
                 1
               </div>
-            </div>  
+            </div>
           </div>
         </div>
         
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500  hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 ">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="./public/assets2/banner2.svg" alt="card-image" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>  
-          </div>
-        </div>
-
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500  hover:shadow-pink-700 rounded-lg w-70 transition-shadow duration-300  ">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="card-image" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>  
+        <!-- Modal for Fullscreen Image -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
+          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
+            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
+            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
           </div>
         </div>
         
+        
         <div class="grid gap-10">
           <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500  hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 ">
+            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 ">
               <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src="./public/assets2/banner2.svg" alt="card-image" />
+                <!-- Add 'onclick' event to the image -->
+                <img src="./public/assets2/screenshot2.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
               </div>
               <div class="p-4">
                 <h6 class="mb-2 text-white text-xl font-semibold">
-                  Website Review Check
+                  My First Ever Website!
                 </h6>
                 <p class="text-gray-400 leading-normal font-light">
-                  The place is close to Barceloneta Beach and bus stop just 2 min by walk
-                  and near to &quot;Naviglio&quot; where you can enjoy the main night life in
-                  Barcelona.
+                  im proudly flexing this website that i made when i newly on html and css
                 </p>
               </div>
               <div class="px-4 pb-4 pt-0 mt-2">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Read more
-                </button>
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Check on Github
-                </button>
+                <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Visit Site
+                  </button>
+                </a>
+                 <a href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                    Check on Github
+                  </button>
+                </a>
               </div>
               <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
                 1
               </div>
-            </div>  
+            </div>
           </div>
         </div>
+        
+        <!-- Modal for Fullscreen Image -->
+        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
+          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
+            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
+            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+          </div>
+        </div>
+        
 
       </div>
     </div>
   </section>
+<script>
+  function openModal(imgElement) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    
+    // Set the modal image source to the clicked image's source
+    modalImage.src = imgElement.src;
+    
+    // Display the modal
+    modal.classList.remove("hidden");
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById("imageModal");
+    
+    // Hide the modal
+    modal.classList.add("hidden");
+  }
+  function openModal(imgElement) {
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const modalContent = document.getElementById("modalContent");
+  
+  // Set the modal image source to the clicked image's source
+  modalImage.src = imgElement.src;
+  
+  // Add a slight delay for the scale animation
+  setTimeout(() => {
+    modalContent.classList.remove("scale-75");
+    modalContent.classList.add("scale-100");
+  }, 100);
 
+  // Fade in and display the modal
+  modal.classList.remove("hidden");
+  modal.classList.add("opacity-100");
+}
+
+function closeModal() {
+  const modal = document.getElementById("imageModal");
+  const modalContent = document.getElementById("modalContent");
+  
+  // Reset the scale for the closing transition
+  modalContent.classList.remove("scale-100");
+  modalContent.classList.add("scale-75");
+  
+  // Fade out and hide the modal
+  setTimeout(() => {
+    modal.classList.add("hidden");
+  }, 500);
+}
+
+</script>
 </body>
 </html>
