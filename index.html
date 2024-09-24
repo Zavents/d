@@ -71,187 +71,148 @@
     </style>
 </head>
 <body style="background-color:#000000;"> 
-  <section class="flex justify-center items-center gap-10 mx-auto p-4" >
-    <div class="container min-screen-h  text-center">
-      <h1 class="max-w-5xl mb-4 text-4xl py-5 tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-400 font-semibold mx-auto">
-        Zavents's Website Project  <br>
-      </h1>
-      
-      <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <!-- Add 'onclick' event to the image -->
-                <img src="./public/assets2/screenshot1.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  My First Ever Website!
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  im proudly flexing this website that i made when i newly on html and css
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Visit Site
-                  </button>
-                </a>
-                 <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Check on Github
-                  </button>
-                </a>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal for Fullscreen Image -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
-          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
-            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
-            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
-          </div>
-        </div>
-        
-        
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 ">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <!-- Add 'onclick' event to the image -->
-                <img src="./public/assets2/screenshot2.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  My First Ever Website!
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  im proudly flexing this website that i made when i newly on html and css
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Visit Site
-                  </button>
-                </a>
-                 <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Check on Github
-                  </button>
-                </a>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal for Fullscreen Image -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
-          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
-            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
-            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
-          </div>
-        </div>
-        
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <!-- Add 'onclick' event to the image -->
-                <img src="./public/assets2/screenshot1.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  My First Ever Website!
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  im proudly flexing this website that i made when i newly on html and css
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Visit Site
-                  </button>
-                </a>
-                 <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Check on Github
-                  </button>
-                </a>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal for Fullscreen Image -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
-          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
-            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
-            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
-          </div>
-        </div>
-        
-        
-        <div class="grid gap-10">
-          <div>
-            <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 ">
-              <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <!-- Add 'onclick' event to the image -->
-                <img src="./public/assets2/screenshot2.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
-              </div>
-              <div class="p-4">
-                <h6 class="mb-2 text-white text-xl font-semibold">
-                  My First Ever Website!
-                </h6>
-                <p class="text-gray-400 leading-normal font-light">
-                  im proudly flexing this website that i made when i newly on html and css
-                </p>
-              </div>
-              <div class="px-4 pb-4 pt-0 mt-2">
-                <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Visit Site
-                  </button>
-                </a>
-                 <a href=" ">
-                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                    Check on Github
-                  </button>
-                </a>
-              </div>
-              <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
-                1
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Modal for Fullscreen Image -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index:100">
-          <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out"style="z-index:100" >
-            <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index:100" />
-            <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
-          </div>
-        </div>
-        
 
+<section class="flex justify-center items-center gap-10 mx-auto p-4 min-h-screen">
+  <div class="container min-screen-h mb-7 text-center">
+    <h1 class="max-w-5xl mb-4 text-4xl  tracking-tight leading-none md:text-5xl xl:text-6xl text-gray-400 font-semibold mx-auto">
+      Zavents's Website Project <br>
+    </h1>
+    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="grid gap-10">
+        <div>
+          <!-- Apply min-h to card container -->
+          <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]"> 
+            <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+              <img src="./public/assets2/screenshot1.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+            </div>
+            <div class="p-4 flex-grow">
+              <h6 class="mb-2 text-white text-xl font-semibold">
+                Bootstrap
+              </h6>
+              <p class="text-gray-400 leading-normal font-light">
+                On this website, I was instructed to learn Bootstrap, and I created a website that displays Bootstrap components here!
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <a href="https://magang.webby.digital/wildan/learn-bootstrap/" target="_blank">
+                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Visit Site
+                </button>
+              </a>
+              <a href="https://github.com/zavents/learn-bootstrap" target="_blank">
+                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Check on Github
+                </button>
+              </a>
+            </div>
+            <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
+              1
+            </div>
+          </div>
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index: 100">
+            <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out" style="z-index: 100">
+              <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index: 100" />
+              <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="grid gap-10">
+        <div>
+          <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]">
+            <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
+              <img src="./public/assets2/screenshot2.png" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+            </div>
+            <div class="p-4 flex-grow">
+              <h6 class="mb-2 text-white text-xl font-semibold">
+                My First Ever Website!
+              </h6>
+              <p class="text-gray-400 leading-normal font-light">
+                I'm proudly flexing this website that I made when I was newly learning HTML and CSS.
+              </p>
+            </div>
+            <div class="px-4 pb-4 pt-0 mt-2">
+              <a href=" ">
+                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Visit Site
+                </button>
+              </a>
+              <a href=" ">
+                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+                  Check on Github
+                </button>
+              </a>
+            </div>
+            <div class="absolute top-0 left-0 bg-white border-gray-900 text-gray-800 font-bold py-1 px-3 rounded-lg m-0">
+              2
+            </div>
+          </div>
+          <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden transition-opacity duration-500 ease-in-out" style="z-index: 100">
+            <div id="modalContent" class="relative max-w-4xl mx-auto p-6 bg-gray-900 rounded-lg transform scale-75 transition-transform duration-500 ease-in-out" style="z-index: 100">
+              <img id="modalImage" src="" alt="Fullscreen image" class="max-w-full h-auto rounded-lg shadow-lg" style="z-index: 100" />
+              <button class="absolute top-2 right-2 bg-gray-200 px-5 text-black rounded-full p-2" onclick="closeModal()">X</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
+  <div class="flex items-center justify-center w-full">
+    <div class="flex-grow border-t border-gray-400"></div>
+    <h6 class="px-4 text-lg md:text:2xl lg:text-3xl text-gray-400 font-semibold text-center">
+      internship Timeline
+    </h6>
+    <div class="flex-grow border-t border-gray-400"></div>
+  </div>
+
+
+<div class="flex flex-col items-center justify-center py-10">
+  <div class="flex items-center justify-center w-full">
+    <div class="flex-grow border-t border-gray-400"></div>
+    <h6 class="px-4 text-lg md:text:2xl lg:text-3xl text-gray-400 font-semibold text-center">
+      Saturday, July 18th 2024
+    </h6>
+    <div class="flex-grow border-t border-gray-400"></div>
+  </div>
+    <img class="md:pt-5 w-2.5 md:w-2.5" src="./public/assets2/arrow.svg" alt="Arrow Icon">
+  <div class="flex flex-col md:flex-row items-center justify-center mt-4 text-center">
+
+    <h6 class="px-4 text-md md:text-xl lg:text-2xl text-gray-400 font-semibold text-center">
+      Wildan (myself) started an internship at
+      <a class="text-gray-300" href="https://netviro.com" target="_blank"><strong>Netviro</strong></a>.<br> 
+      Work hours: Monday to Friday, 8:30 AM - 5:00 PM, and Saturday, 8:00 AM - 5:00 PM
+    </h6>
+  </div>
+</div>
+
+<div class="flex flex-col items-center justify-center py-10 p-4">
+  <div class="flex items-center justify-center w-full">
+    <div class="flex-grow border-t border-gray-400"></div>
+    <h6 class="px-4 text-lg md:text:2xl lg:text-3xl text-gray-400 font-semibold text-center">
+      Monday, July 22nd 2024
+    </h6>
+    <div class="flex-grow border-t border-gray-400"></div>
+  </div>
+    <img class="md:pt-5 w-2.5 md:w-2.5" src="./public/assets2/arrow.svg" alt="Arrow Icon">
+  <div class="flex flex-col md:flex-row items-center justify-center mt-4 text-center">
+
+    <h6 class="px-4 text-md md:text-xl lg:text-2xl text-gray-400 font-semibold text-center">
+      My First ever Project !!! 
+      <a class="text-gray-300" href="https://magang.webby.digital/wildan/learn-bootstrap/" target="_blank"><code><strong>learn-bootstraps</strong></code></a><br>
+      At first, it was kind of difficult figuring out how these classes work, but in the end, it was simple and easy to understand
+    </h6>
+
+  </div>
+</div>
+
+
+
+</div>
 <script>
   function openModal(imgElement) {
     const modal = document.getElementById("imageModal");
