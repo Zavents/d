@@ -526,7 +526,6 @@ input[type=range]::-moz-range-thumb {
     <div class="flex-grow border-t border-gray-400"></div>
   </div>
 
-
   <div class="flex flex-col items-center justify-center py-10">
     <div class="flex items-center justify-center w-full">
       <div class="flex-grow border-t border-gray-400"></div>
@@ -545,7 +544,6 @@ input[type=range]::-moz-range-thumb {
       </h6>
     </div>
   </div>
-
   <div class="flex flex-col items-center justify-center py-10 p-4">
     <div class="flex items-center justify-center w-full">
       <div class="flex-grow border-t border-gray-400"></div>
@@ -565,7 +563,6 @@ input[type=range]::-moz-range-thumb {
 
     </div>
   </div>
-
   <div class="flex flex-col items-center justify-center py-10 p-4">
     <div class="flex items-center justify-center w-full">
       <div class="flex-grow border-t border-gray-400"></div>
@@ -600,18 +597,14 @@ input[type=range]::-moz-range-thumb {
       <a id="music-backward" onclick="prevTrack()">
           <i class="player-icons">&#xe802;</i>
       </a>
-
       <a id="music-play" onclick="playpauseTrack()">
           <i class="player-icons">&#xe800;</i>
       </a>
-
       <a id="music-forward" onclick="nextTrack()">
           <i class="player-icons">&#xe801;</i>
       </a>
   </div>
-
   <a id="split">|</a>
-
   <div class="music-info" style="flex: 5;">
       <a id="music-queue">1/1</a>
       <a id="split">|</a>
@@ -619,51 +612,32 @@ input[type=range]::-moz-range-thumb {
       <a id="split">|</a>
       <a id="music-title" style="flex: 5;">MUSIC-TITLE</a>
   </div>
-
   <a id="split">|</a>
-
   <div class="music-volume" style="flex: 0.5; padding-left: 5px;padding-right: 32px;">
       <input type="range" id="music-volume" min="0" max="100" value="25" onchange="setVolume()" oninput="setVolume()">
   </div>
-
   <audio id="music" src="" crossorigin="anonymous"></audio>
 </div>
-
-
 <script>
-
   function openModal(imgElement) {
     const modal = document.getElementById("imageModal");
     const modalImage = document.getElementById("modalImage");
-    
-    // Set the modal image source to the clicked image's source
     modalImage.src = imgElement.src;
-    
-    // Display the modal
     modal.classList.remove("hidden");
   }
-  
   function closeModal() {
     const modal = document.getElementById("imageModal");
-    
-    // Hide the modal
     modal.classList.add("hidden");
   }
   function openModal(imgElement) {
   const modal = document.getElementById("imageModal");
   const modalImage = document.getElementById("modalImage");
   const modalContent = document.getElementById("modalContent");
-  
-  // Set the modal image source to the clicked image's source
   modalImage.src = imgElement.src;
-  
-  // Add a slight delay for the scale animation
   setTimeout(() => {
     modalContent.classList.remove("scale-75");
     modalContent.classList.add("scale-100");
   }, 100);
-
-  // Fade in and display the modal
   modal.classList.remove("hidden");
   modal.classList.add("opacity-100");
 }
@@ -671,12 +645,8 @@ input[type=range]::-moz-range-thumb {
 function closeModal() {
   const modal = document.getElementById("imageModal");
   const modalContent = document.getElementById("modalContent");
-  
-  // Reset the scale for the closing transition
   modalContent.classList.remove("scale-100");
   modalContent.classList.add("scale-75");
-  
-  // Fade out and hide the modal
   setTimeout(() => {
     modal.classList.add("hidden");
   }, 500);
