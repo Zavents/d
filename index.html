@@ -14,136 +14,7 @@
     <!-- style css -->
     <link rel="stylesheet" href="./stuff/public/style/style.css">
     
-<style>
-  /* bottombar player stuff, awful styling. */
 
-@font-face {
-  font-family: "jk::player-icons";
-  src: url("./stuff/public/assets2/font/icons.woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-.player-icons {
-  font-family: "jk::player-icons";
-  font-style: normal;
-  font-weight: normal;
-  color: white;
-  user-select: none;
-}
-
-.music-player {
-  bottom: 0;
-  left: 0;
-  padding-left: 10px;
-  padding-right: 10px;
-  width: 100%;
-  height: 32px;
-  background-color: #79515100;
-  border-top: 1px solid #fff;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  user-select: none;
-  overflow: hidden;
-}
-
-.music-player a {
-  color: #fff;
-  font-size: 1.2em;
-  text-align: center;
-  padding: 10px;
-}
-
-.music-info {
-  display: flex;
-  align-items: center;
-}
-
-
-input[type=range] {
-  -webkit-appearance: none;
-  width: 100%;
-  background-color: #fff;
-}
-
-input[type=range]:focus {
-  outline: none;
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 2px;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #000000;
-  background: #fff;
-  border-radius: 1px;
-  border: 0px solid #000000;
-}
-
-input[type=range]::-webkit-slider-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #fff;
-  height: 10px;
-  width: 10px;
-  border-radius: 0px;
-  background: #fff;
-  -webkit-appearance: none;
-  margin-top: -4px;
-}
-
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: #fff;
-}
-
-input[type=range]::-moz-range-track {
-  width: 100%;
-  height: 2px;
-  animate: 0.2s;
-  box-shadow: 0px 0px 0px #000000;
-  background: #fff;
-  border-radius: 1px;
-  border: 0px solid #000000;
-}
-
-input[type=range]::-moz-range-thumb {
-  box-shadow: 0px 0px 0px #000000;
-  border: 0px solid #fff;
-  height: 10px;
-  width: 10px;
-  border-radius: 0px;
-  background: #fff;
-}
-
-/* phone */
-@media only screen and (max-width: 768px),
-(orientation: portrait) {
-  input[type=range] {
-      display: none;
-  }
-
-  #split {
-      display: none;
-  }
-
-  #music-queue {
-      display: none;
-  }
-
-  #music-duration {
-      display: none;
-  }
-
-  .music-control a {
-      font-size: 1.5em;
-      padding: 5px;
-  }
-
-  .music-info a {
-      font-size: 3vw;
-  }
-}
-</style>
 <style>
   @font-face {
     font-family: Terminus;
@@ -215,7 +86,7 @@ input[type=range]::-moz-range-thumb {
           <!-- Apply min-h to card container -->
           <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]"> 
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-              <img src="./stuff/public/assets2/screenshot1.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+              <img loading="lazy" src="./stuff/public/assets2/screenshot1.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
               <h6 class="mb-2 text-white text-xl font-semibold">
@@ -227,26 +98,26 @@ input[type=range]::-moz-range-thumb {
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
               <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                <img src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
                 <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
               </a>
               <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
               </a>
               <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
               </a>
             </div>
             <div class="px-4 pb-4 pt-0 mt-2">
-              <a href="https://magang.webby.digital/wildan/learn-bootstrap/" target="_blank">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href="https://magang.webby.digital/wildan/learn-bootstrap/" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Visit Site
                 </button>
               </a>
-              <a href="https://github.com/zavents/learn-bootstrap" target="_blank">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href="https://github.com/zavents/learn-bootstrap" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Check on Github
                 </button>
               </a>
@@ -271,7 +142,7 @@ input[type=range]::-moz-range-thumb {
         <div>
           <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-              <img src="./stuff//public/assets2/screenshot2.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+              <img loading="lazy" src="./stuff//public/assets2/screenshot2.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
               <h6 class="mb-2 text-white text-xl font-semibold">
@@ -283,30 +154,30 @@ input[type=range]::-moz-range-thumb {
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
               <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                <img src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
                 <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
               </a>
               <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
               </a>
               <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
               </a>
               <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
               </a>
             </div>
             <div class="px-4 pb-4 pt-0 mt-2">
-              <a href="https://magang.webby.digital/wildan/ifg/" target="_blank">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href="https://magang.webby.digital/wildan/ifg/" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Visit Site
                 </button>
               </a>
-              <a href=" https://github.com/Zavents/ifg" target="_blank">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href=" https://github.com/Zavents/ifg" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Check on Github
                 </button>
               </a>
@@ -331,7 +202,7 @@ input[type=range]::-moz-range-thumb {
         <div>
           <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-              <img src="./stuff//public/assets2/screenshot3.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+              <img loading="lazy" src="./stuff//public/assets2/screenshot3.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
               <h6 class="mb-2 text-white text-xl font-semibold">
@@ -343,31 +214,31 @@ input[type=range]::-moz-range-thumb {
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
               <a href="javascript:void(0)" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
               </a>
               <a href="javascript:void(0)" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
               </a>
 
               <a href="javascript:void(0)" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
               </a>
               <a href="javascript:void(0)" class="flex bg-purple-300 border border-purple-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-purple-700/70">
-                <img src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/bs.svg" class="w-3 h-3" alt="">
                 <p class="text-purple-600 ps-1 text-xs font-semibold tracking-wider">BOOTSTRAP</p>
               </a>
             </div>
             <div class="px-4 pb-4 pt-0 mt-2">
-              <a href="https://magang.webby.digital/wildan/ikinglink ">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href="https://magang.webby.digital/wildan/ikinglink ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Visit Site
                 </button>
               </a>
-              <a href=" https://github.com/Zavents/ikinglink">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href=" https://github.com/Zavents/ikinglink">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Check on Github
                 </button>
               </a>
@@ -393,7 +264,7 @@ input[type=range]::-moz-range-thumb {
           <!-- Apply min-h to card container -->
           <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]"> 
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-              <img src="./stuff/public/assets2/screenshot4.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+              <img loading="lazy" src="./stuff/public/assets2/screenshot4.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
               <h6 class="mb-2 text-white text-xl font-semibold">
@@ -405,26 +276,26 @@ input[type=range]::-moz-range-thumb {
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
               <a href="#" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3 border border-white" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
               </a>
               <a href="#" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
               </a>
               <a href="#" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
               </a>
             </div>
             <div class="px-4 pb-4 pt-0 mt-2">
-              <a href="https://magang.webby.digital/wildan/calendar/" target="_blank">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href="https://magang.webby.digital/wildan/calendar/" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Visit Site
                 </button>
               </a>
-              <a href="https://github.com/zavents/calendar" target="_blank">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href="https://github.com/zavents/calendar" target="_blank">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Check on Github
                 </button>
               </a>
@@ -449,7 +320,7 @@ input[type=range]::-moz-range-thumb {
         <div>
           <div class="relative flex flex-col my-6 bg-gray-800 shadow-lg border border-white-500 hover:shadow-pink-700 rounded-lg w-70 transition-transform duration-300 ease-in-out transform hover:scale-105 min-h-[450px]">
             <div class="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-              <img src="./stuff//public/assets2/screenshot5.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
+              <img loading="lazy" src="./stuff//public/assets2/screenshot5.png" loading="lazy" alt="card-image" class="cursor-pointer transition-transform duration-500 ease-in-out transform hover:scale-110" onclick="openModal(this)" />
             </div>
             <div class="p-4 flex-grow">
               <h6 class="mb-2 text-white text-xl font-semibold">
@@ -461,30 +332,30 @@ input[type=range]::-moz-range-thumb {
             </div>
             <div class="flex  px-5 flex-wrap  items-center  align-middle left-20  gap-2 pb-3 ">
               <a href="#" class="flex bg-blue-300 border border-blue-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-blue-700/70">
-                <img src="./stuff/public/assets2/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/tailwind.svg" class="w-3 h-3 bg-blue-100/30 rounded-full" alt="">
                 <p class="text-blue-600 ps-1 text-xs font-semibold tracking-wider">TAILWIND</p>
               </a>
               <a href="#" class="flex bg-orange-300 border border-orange-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-orange-700/70">
-                <img src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/html.svg" class="w-3 h-3" alt="">
                 <p class="text-orange-600 ps-1 text-xs font-semibold tracking-wider">HTML</p>
               </a>
               <a href="#" class="flex bg-cyan-300 border border-cyan-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-cyan-700/70">
-                <img src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/css.svg" class="w-3 h-3" alt="">
                 <p class="text-cyan-600 ps-1 text-xs font-semibold tracking-wider">CSS</p>
               </a>
               <a href="#" class="flex bg-yellow-300 border border-yellow-600 rounded-full px-2 py-1 items-center text-center hover:scale-95 duration-200 hover:shadow-md hover:shadow-yellow-700/70">
-                <img src="./stuff/public/assets2/js.svg" class="w-3 h-3" alt="">
+                <img loading="lazy" src="./stuff/public/assets2/js.svg" class="w-3 h-3" alt="">
                 <p class="text-yellow-600 ps-1 text-xs font-semibold tracking-wider">JAVASCRIPT</p>
               </a>
             </div>
             <div class="px-4 pb-4 pt-0 mt-2">
-              <a href=" https://magang.webby.digital/wildan/learn-tailwind/">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href=" https://magang.webby.digital/wildan/learn-tailwind/">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Visit Site
                 </button>
               </a>
-              <a href=" ">
-                <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
+              <a  href=" ">
+                  <button class="rounded-md bg-gray-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
                   Check on Github
                 </button>
               </a>
